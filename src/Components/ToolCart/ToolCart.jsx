@@ -1,10 +1,12 @@
 import { Check } from "lucide-react";
+import { toast } from "react-toastify";
 
 function ToolCart({ card, cart, setCart }) {
   const { name, description, price, period, tag, features, icon } = card;
 
   const handleBuyNow = (card) => {
     setCart([...cart, card]);
+    toast.success(`${name} is added to cart`)
   };
 
   return (

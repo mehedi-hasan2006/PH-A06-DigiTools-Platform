@@ -7,7 +7,11 @@
     "period": "monthly",
     "tag": "Best Seller",
     "tagType": "best-seller",
-    "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
     "icon": "https://img.icons8.com/fluency/96/edit-file.png"
   },
   {
@@ -86,5 +90,20 @@
     "tagType": "new",
     "features": ["2TB storage", "End-to-end encryption", "File recovery"],
     "icon": "https://img.icons8.com/fluency/96/cloud.png"
+  },
+  {
+    "id": 10,
+    "name": "Cyber Security Suite",
+    "description": "Protect your digital workspace with real-time threat detection and advanced encryption.",
+    "price": 59,
+    "period": "monthly",
+    "tag": "Top Rated",
+    "tagType": "popular",
+    "features": [
+      "Real-time firewall",
+      "Encrypted VPN access",
+      "Identity theft alerts"
+    ],
+    "icon": "https://img.icons8.com/fluency/96/shield.png"
   }
 ]

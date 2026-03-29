@@ -1,8 +1,14 @@
-import React from "react";
+import { toast } from "react-toastify";
 
 function Carts({ cart, setCart }) {
+  const handleDelete = (c) => {
+    const filteredArray = cart.filter((item) => item.id !== c.id);
+    setCart(filteredArray);
+    toast.success(`${c.name} is removed`)
+  };
   const handlePayment = () => {
     setCart([]);
+    toast.success("Payment Successful!");
   };
 
   return (
@@ -11,8 +17,8 @@ function Carts({ cart, setCart }) {
         <h2 className="font-bold text-[24px] mb-3">Your Carts</h2>
       </div>
       <div className="space-y-5">
-        {cart.map((c) => (
-          <div className="bg-gray-100 p-5 rounded-lg">
+        {cart.map((c, index) => (
+          <div key={index} className="bg-gray-100 p-5 rounded-lg">
             <div className="flex justify-between items-center">
               <div className="flex gap-3 items-center">
                 <div className="bg-white p-1.5 rounded-full">
@@ -24,7 +30,10 @@ function Carts({ cart, setCart }) {
                 </div>
               </div>
               <div>
-                <button className="text-red-500 font-semibold cursor-pointer bg-transparent border-none btn">
+                <button
+                  onClick={() => handleDelete(c)}
+                  className="text-red-500 font-semibold cursor-pointer bg-transparent border-none btn"
+                >
                   Remove
                 </button>
               </div>

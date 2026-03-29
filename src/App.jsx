@@ -8,7 +8,7 @@ const toolDataPromise = fetch("/data.json").then((res) => res.json());
 
 function App() {
   const [cart, setCart] = useState([]);
-  console.log(cart);
+
   const [buttonToggle, setButtonToggle] = useState("product");
   const handleButton = (item) => {
     setButtonToggle(item);
@@ -28,7 +28,7 @@ function App() {
           onClick={() => handleButton("cart")}
           className={`px-3 cursor-pointer py-2 font-semibold w-30 text-black rounded-full ${buttonToggle === "cart" && "text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]"}`}
         >
-          Cart{" "}
+          Cart{" "} ({cart.length})
         </button>
       </div>
 
