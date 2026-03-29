@@ -2,6 +2,7 @@ import { Suspense, useState } from "react";
 import NavBar from "./Components/Navbar/NavBar";
 import ToolCarts from "./Components/ToolCart/ToolCarts";
 import LoadingSpiner from "./Components/LoadingSpiner";
+import Carts from "./Components/Carts/Carts";
 
 const toolDataPromise = fetch("/data.json").then((res) => res.json());
 
@@ -29,9 +30,13 @@ function App() {
         </button>
       </div>
 
-      <Suspense fallback={<LoadingSpiner></LoadingSpiner>}>
-        <ToolCarts toolDataPromise={toolDataPromise}> </ToolCarts>
-      </Suspense>
+      {buttonToggle === "product" ? (
+        <Suspense fallback={<LoadingSpiner></LoadingSpiner>}>
+          <ToolCarts toolDataPromise={toolDataPromise}> </ToolCarts>
+        </Suspense>
+      ) : (
+        <Carts></Carts>
+      )}
     </>
   );
 }
