@@ -7,6 +7,8 @@ import Carts from "./Components/Carts/Carts";
 const toolDataPromise = fetch("/data.json").then((res) => res.json());
 
 function App() {
+  const [cart, setCart] = useState([]);
+  console.log(cart);
   const [buttonToggle, setButtonToggle] = useState("product");
   const handleButton = (item) => {
     setButtonToggle(item);
@@ -32,10 +34,16 @@ function App() {
 
       {buttonToggle === "product" ? (
         <Suspense fallback={<LoadingSpiner></LoadingSpiner>}>
-          <ToolCarts toolDataPromise={toolDataPromise}> </ToolCarts>
+          <ToolCarts
+            toolDataPromise={toolDataPromise}
+            cart={cart}
+            setCart={setCart}
+          >
+            {" "}
+          </ToolCarts>
         </Suspense>
       ) : (
-        <Carts></Carts>
+        <Carts cart={cart} setCart={setCart}></Carts>
       )}
     </>
   );

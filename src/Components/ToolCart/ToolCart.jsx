@@ -1,8 +1,11 @@
 import { Check } from "lucide-react";
 
-function ToolCart({ card }) {
+function ToolCart({ card, cart, setCart }) {
   const { name, description, price, period, tag, features, icon } = card;
-  console.log(icon);
+
+  const handleBuyNow = (card) => {
+    setCart([...cart, card]);
+  };
 
   return (
     <div>
@@ -26,8 +29,8 @@ function ToolCart({ card }) {
         </div>
         <div>
           <ul>
-            {features.map((f) => (
-              <li className="flex gap-2 text-[#627382]">
+            {features.map((f, index) => (
+              <li key={index} className="flex gap-2 text-[#627382]">
                 {" "}
                 <Check color="#30B868" /> {f}{" "}
               </li>
@@ -35,7 +38,10 @@ function ToolCart({ card }) {
           </ul>
         </div>
 
-        <button className="btn w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">
+        <button
+          onClick={() => handleBuyNow(card)}
+          className="btn w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full"
+        >
           Buy Now
         </button>
       </div>
