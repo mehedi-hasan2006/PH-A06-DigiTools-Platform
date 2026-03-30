@@ -40,9 +40,9 @@ const navLinks = navbar.map((nav) => (
   </li>
 ));
 
-function NavBar() {
+function NavBar({ cart }) {
   return (
-    <div className=" shadow-sm">
+    <div className=" shadow-sm sticky top-0 z-50">
       <div className="navbar bg-base-100 mx-auto container">
         <div className="navbar-start">
           <div className="dropdown">
@@ -67,22 +67,24 @@ function NavBar() {
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-                {navLinks}
+              {navLinks}
             </ul>
           </div>
           <img src={Logo} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            {navLinks}
-          </ul>
+          <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
-        <div className="navbar-end gap-5">
-          <button className="flex">
+        <div className="navbar-end gap-8 ">
+          <button className="flex relative cursor-pointer">
             <ShoppingCart />
-            <div className="badge badge-sm badge-secondary">+99</div>
+            {cart.length > 0 && (
+              <div className="badge badge-sm  rounded-full badge-secondary absolute -right-4 -top-2">
+                {cart.length}
+              </div>
+            )}
           </button>
-          <a className=" font-semibold cursor-pointer">Button</a>
+          <a className="font-semibold cursor-pointer">Button</a>
           <button className="bg-linear-to-r from-[#4F39F6] to-[#9514FA]  rounded-full px-4 py-3 font-semibold cursor-pointer text-white">
             Get Started
           </button>
