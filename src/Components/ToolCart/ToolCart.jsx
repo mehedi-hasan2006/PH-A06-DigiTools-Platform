@@ -5,8 +5,13 @@ function ToolCart({ card, cart, setCart }) {
   const { name, description, price, period, tag, features, icon } = card;
 
   const handleBuyNow = (card) => {
+    const isFound = cart.find((item) => item.id === card.id);
+    if (isFound) {
+      toast.error(`${name} is already in cart`);
+      return;
+    }
     setCart([...cart, card]);
-    toast.success(`${name} is added to cart`)
+    toast.success(`${name} is added to cart`);
   };
 
   return (
