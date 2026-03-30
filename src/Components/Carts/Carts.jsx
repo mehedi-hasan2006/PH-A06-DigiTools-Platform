@@ -2,6 +2,8 @@ import { toast } from "react-toastify";
 import NoProduct from "./NoProduct";
 
 function Carts({ cart, setCart }) {
+  const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
+
   const handleDelete = (c) => {
     const filteredArray = cart.filter((item) => item.id !== c.id);
     setCart(filteredArray);
@@ -53,7 +55,7 @@ function Carts({ cart, setCart }) {
 
             <div className="flex justify-between mt-10 mb-5">
               <p className="text-gray-400">Total :</p>
-              <p className="font-bold text-[24px]"> $0 </p>
+              <p className="font-bold text-[24px]"> ${totalPrice} </p>
             </div>
 
             <div>
