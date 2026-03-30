@@ -3,6 +3,7 @@ import NavBar from "./Components/Navbar/NavBar";
 import ToolCarts from "./Components/ToolCart/ToolCarts";
 import LoadingSpiner from "./Components/LoadingSpiner";
 import Carts from "./Components/Carts/Carts";
+import NoProduct from "./Components/Carts/NoProduct";
 
 const toolDataPromise = fetch("/data.json").then((res) => res.json());
 
@@ -16,6 +17,8 @@ function App() {
   return (
     <>
       <NavBar />
+
+      
 
       <div className="flex justify-center gap-5 mt-5">
         <button
