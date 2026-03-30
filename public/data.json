@@ -87,7 +87,7 @@
     "price": 99,
     "period": "yearly",
     "tag": "Limited",
-    "tagType": "new",
+    "tagType": "limited",
     "features": ["2TB storage", "End-to-end encryption", "File recovery"],
     "icon": "https://img.icons8.com/fluency/96/cloud.png"
   },
@@ -98,7 +98,7 @@
     "price": 59,
     "period": "monthly",
     "tag": "Top Rated",
-    "tagType": "popular",
+    "tagType": "top-rated",
     "features": [
       "Real-time firewall",
       "Encrypted VPN access",

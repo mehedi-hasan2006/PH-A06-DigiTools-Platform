@@ -16,9 +16,7 @@ function App() {
   };
   return (
     <>
-      <NavBar cart={cart}/>
-
-      
+      <NavBar cart={cart} />
 
       <div className="flex justify-center gap-5 mt-5">
         <button
@@ -31,7 +29,7 @@ function App() {
           onClick={() => handleButton("cart")}
           className={`px-3 cursor-pointer py-2 font-semibold w-30 text-black rounded-full ${buttonToggle === "cart" && "text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]"}`}
         >
-          Cart{" "} ({cart.length})
+          Cart ({cart.length})
         </button>
       </div>
 
