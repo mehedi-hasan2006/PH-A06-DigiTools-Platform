@@ -9,7 +9,7 @@ function PricingSections({ pricingData }) {
         <h1 className="font-bold text-[30px] md:text-[36px] lg:text-[48px]">
           Simple, Transparent Pricing
         </h1>
-        <p className="text-gray-5 00">
+        <p className="text-gray-500">
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>

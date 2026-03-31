@@ -5,6 +5,7 @@ import LoadingSpiner from "./Components/LoadingSpiner";
 import Carts from "./Components/Carts/Carts";
 import NoProduct from "./Components/Carts/NoProduct";
 import PricingSections from "./Components/PricingSections/PricingSections";
+import GetStartedSection from "./Components/GetStarted/GetStartedSection";
 
 const toolDataPromise = fetch("/data.json").then((res) => res.json());
 
@@ -25,6 +26,8 @@ function App() {
   return (
     <>
       <NavBar cart={cart} />
+
+      
 
       <div className="flex justify-center gap-5 mt-5">
         <button
@@ -54,6 +57,8 @@ function App() {
       ) : (
         <Carts cart={cart} setCart={setCart}></Carts>
       )}
+
+      <GetStartedSection></GetStartedSection>
 
       <Suspense fallback={<LoadingSpiner></LoadingSpiner>}>
         <PricingSections pricingData={pricingData}> </PricingSections>
