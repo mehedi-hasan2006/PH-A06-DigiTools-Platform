@@ -15,7 +15,7 @@ function Carts({ cart, setCart }) {
   };
 
   return (
-    <div className="px-5">
+    <div className="px-5 mb-10 ">
       <div className="container mx-auto border shadow border-[#F2F2F2] p-5 rounded-md mt-8">
         {cart.length === 0 ? (
           <NoProduct />

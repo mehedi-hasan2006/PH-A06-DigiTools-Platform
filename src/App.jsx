@@ -3,9 +3,10 @@ import NavBar from "./Components/Navbar/NavBar";
 import ToolCarts from "./Components/ToolCart/ToolCarts";
 import LoadingSpiner from "./Components/LoadingSpiner";
 import Carts from "./Components/Carts/Carts";
-import NoProduct from "./Components/Carts/NoProduct";
 import PricingSections from "./Components/PricingSections/PricingSections";
 import GetStartedSection from "./Components/GetStarted/GetStartedSection";
+import Hero from "./Components/Hero";
+
 
 const toolDataPromise = fetch("/data.json").then((res) => res.json());
 
@@ -26,6 +27,8 @@ function App() {
   return (
     <>
       <NavBar cart={cart} />
+
+      <Hero></Hero>
 
       
 
