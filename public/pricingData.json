@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "plan": "Starter",
+    "description": "Perfect for getting started",
+    "price": 0,
+    "billing": "month",
+    "currency": "USD",
+    "isPopular": false,
+    "features": [
+      "Access to 10 free tools",
+      "Basic templates",
+      "Community support",
+      "1 project per month"
+    ],
+    "button": {
+      "text": "Get Started Free",
+      "action": "start_free",
+      "style": "primary"
+    }
+  },
+  {
+    "id": 2,
+    "plan": "Pro",
+    "description": "Best for professionals",
+    "price": 29,
+    "billing": "month",
+    "currency": "USD",
+    "isPopular": true,
+    "badge": "Most Popular",
+    "features": [
+      "Access to all premium tools",
+      "Unlimited templates",
+      "Priority support",
+      "Unlimited projects",
+      "Cloud sync",
+      "Advanced analytics"
+    ],
+    "button": {
+      "text": "Start Pro Trial",
+      "action": "start_trial",
+      "style": "highlight"
+    }
+  },
+  {
+    "id": 3,
+    "plan": "Enterprise",
+    "description": "For teams and businesses",
+    "price": 99,
+    "billing": "month",
+    "currency": "USD",
+    "isPopular": false,
+    "features": [
+      "Everything in Pro",
+      "Team collaboration",
+      "Custom integrations",
+      "Dedicated support",
+      "SLA guarantee",
+      "Custom branding"
+    ],
+    "button": {
+      "text": "Contact Sales",
+      "action": "contact_sales",
+      "style": "primary"
+    }
+  }
+]

@@ -4,10 +4,18 @@ import ToolCarts from "./Components/ToolCart/ToolCarts";
 import LoadingSpiner from "./Components/LoadingSpiner";
 import Carts from "./Components/Carts/Carts";
 import NoProduct from "./Components/Carts/NoProduct";
+import PricingSections from "./Components/PricingSections/PricingSections";
 
 const toolDataPromise = fetch("/data.json").then((res) => res.json());
 
+const pricingDataPromise = async () => {
+  const res = await fetch("/pricingData.json");
+  return res.json();
+};
+
 function App() {
+  const pricingData = pricingDataPromise();
+
   const [cart, setCart] = useState([]);
 
   const [buttonToggle, setButtonToggle] = useState("product");
@@ -46,6 +54,10 @@ function App() {
       ) : (
         <Carts cart={cart} setCart={setCart}></Carts>
       )}
+
+      <Suspense fallback={<LoadingSpiner></LoadingSpiner>}>
+        <PricingSections pricingData={pricingData}> </PricingSections>
+      </Suspense>
     </>
   );
 }
