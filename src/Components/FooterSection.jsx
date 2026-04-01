@@ -1,10 +1,10 @@
-import { Instagram, Facebook, Twitter } from "lucide-react";
+import { FaInstagram, FaFacebookF, FaXTwitter } from "react-icons/fa6";
 
 function FooterSection() {
   return (
     <footer className="bg-[#0B1A2B] text-gray-300 px-6 md:px-16 py-12">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10">
           <div className="md:col-span-2">
             <h2 className="text-white text-2xl font-bold mb-4">DigiTools</h2>
             <p className="text-sm leading-6 text-gray-400 max-w-sm">
@@ -45,13 +45,13 @@ function FooterSection() {
             <h3 className="text-white font-semibold mb-3">Social Links</h3>
             <div className="flex gap-3">
               <div className="w-9 h-9 flex items-center justify-center bg-white text-black rounded-full hover:scale-110 transition cursor-pointer">
-                <Instagram size={16} />
+                <FaInstagram size={14} />
               </div>
               <div className="w-9 h-9 flex items-center justify-center bg-white text-black rounded-full hover:scale-110 transition cursor-pointer">
-                <Facebook size={16} />
+                <FaFacebookF size={14} />
               </div>
               <div className="w-9 h-9 flex items-center justify-center bg-white text-black rounded-full hover:scale-110 transition cursor-pointer">
-                <Twitter size={16} />
+                <FaXTwitter size={14} />
               </div>
             </div>
           </div>
