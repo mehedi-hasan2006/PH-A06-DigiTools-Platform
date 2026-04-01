@@ -24,10 +24,10 @@ function GetStartedSection() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="url(#userGradient)"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-user-icon lucide-user"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-user-icon lucide-user"
                 >
                   <defs>
                     <linearGradient
@@ -37,8 +37,8 @@ function GetStartedSection() {
                       x2="100%"
                       y2="0%"
                     >
-                      <stop offset="0%" stop-color="#4F39F6" />
-                      <stop offset="100%" stop-color="#9514FA" />
+                      <stop offset="0%" stopColor="#4F39F6" />
+                      <stop offset="100%" stopColor="#9514FA" />
                     </linearGradient>
                   </defs>
 
@@ -71,10 +71,10 @@ function GetStartedSection() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="url(#userGradient)"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-package-search-icon lucide-package-search"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-package-search-icon lucide-package-search"
                 >
                   <defs>
                     <linearGradient
@@ -84,8 +84,8 @@ function GetStartedSection() {
                       x2="100%"
                       y2="0%"
                     >
-                      <stop offset="0%" stop-color="#4F39F6" />
-                      <stop offset="100%" stop-color="#9514FA" />
+                      <stop offset="0%" stopColor="#4F39F6" />
+                      <stop offset="100%" stopColor="#9514FA" />
                     </linearGradient>
                   </defs>
 
@@ -121,10 +121,10 @@ function GetStartedSection() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="url(#userGradient)"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-rocket-icon lucide-rocket"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-rocket-icon lucide-rocket"
                 >
                   <defs>
                     <linearGradient
@@ -134,8 +134,8 @@ function GetStartedSection() {
                       x2="100%"
                       y2="0%"
                     >
-                      <stop offset="0%" stop-color="#4F39F6" />
-                      <stop offset="100%" stop-color="#9514FA" />
+                      <stop offset="0%" stopColor="#4F39F6" />
+                      <stop offset="100%" stopColor="#9514FA" />
                     </linearGradient>
                   </defs>
 

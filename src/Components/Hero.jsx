@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className="container mx-auto mt-10 md:flex gap-15 px-5">
       <div className="space-y-3">
-        <span className="    rounded-full  text-violet-600 ">
+        <span className=" inline-block   rounded-full  text-violet-600 ">
           <p className="flex items-center gap-2 bg-violet-100 rounded-full px-3 py-1">
             <img className="w-5 h-5" src={circle} alt="" />
             <span>New: AI-Powered Tools Available</span>
@@ -38,10 +38,10 @@ function Hero() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="url(#userGradient)"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-play-icon lucide-play"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-play-icon lucide-play"
               >
                 <defs>
                   <linearGradient
@@ -51,8 +51,8 @@ function Hero() {
                     x2="100%"
                     y2="0%"
                   >
-                    <stop offset="0%" stop-color="#4F39F6" />
-                    <stop offset="100%" stop-color="#9514FA" />
+                    <stop offset="0%" stopColor="#4F39F6" />
+                    <stop offset="100%" stopColor="#9514FA" />
                   </linearGradient>
                 </defs>
 
