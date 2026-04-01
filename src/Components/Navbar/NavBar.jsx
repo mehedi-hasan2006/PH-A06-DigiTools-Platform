@@ -32,7 +32,7 @@ const navbar = [
 const navLinks = navbar.map((nav) => (
   <li className="mr-5" key={nav.id}>
     <a
-      className="text-[#13131395] dark:text-white font-semibold hover:text-black hover:bg-transparent dark:hover:text-white"
+      className="text-[#13131395] dark:text-white py-2 font-semibold hover:text-white hover:bg-linear-to-r from-[#4F39F6] to-[#9514FA] dark:hover:text-white"
       href={nav.path}
     >
       {nav.name}
@@ -42,9 +42,9 @@ const navLinks = navbar.map((nav) => (
 
 function NavBar({ cart }) {
   return (
-    <div className=" shadow-sm sticky top-0 z-50">
+    <div className=" bg-base-100 shadow-sm sticky top-0 z-50">
       <div className="navbar bg-base-100 mx-auto container">
-        <div className="navbar-start">
+        <div className="navbar-start gap-2">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -84,7 +84,9 @@ function NavBar({ cart }) {
               </div>
             )}
           </button>
-          <a className="font-semibold cursor-pointer">Login </a>
+          <a className="font-semibold cursor-pointer px-3 py-2 rounded-full hover:text-white hover:bg-linear-to-r from-[#4F39F6] to-[#9514FA] ">
+            Login
+          </a>
           <button className=" hidden md:block bg-linear-to-r from-[#4F39F6] to-[#9514FA]  rounded-full px-4 py-3 font-semibold cursor-pointer text-white">
             Get Started
           </button>

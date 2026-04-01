@@ -4,8 +4,8 @@ import "../index.css";
 
 function Hero() {
   return (
-    <div className="container mx-auto mt-10 md:flex gap-15 px-5">
-      <div className="space-y-3">
+    <div className="container mx-auto mt-10 md:flex md:items-center gap-15 px-5">
+      <div className="space-y-3 ">
         <span className=" inline-block   rounded-full  text-violet-600 ">
           <p className="flex items-center gap-2 bg-violet-100 rounded-full px-3 py-1">
             <img className="w-5 h-5" src={circle} alt="" />

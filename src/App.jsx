@@ -8,6 +8,9 @@ import GetStartedSection from "./Components/GetStarted/GetStartedSection";
 import Hero from "./Components/Hero";
 import Footer from "daisyui/components/footer";
 import FooterSection from "./Components/FooterSection";
+import ToolCartDes from "./Components/ToolCart/ToolCartDes";
+import Stats from "./Components/Stats";
+import WorkFlowSection from "./Components/WorkFlowSection";
 
 const toolDataPromise = fetch("/data.json").then((res) => res.json());
 
@@ -30,6 +33,9 @@ function App() {
       <NavBar cart={cart} />
 
       <Hero></Hero>
+      <Stats></Stats>
+
+      <ToolCartDes></ToolCartDes>
 
       <div className="flex justify-center gap-5 mt-5">
         <button
@@ -66,6 +72,8 @@ function App() {
         <PricingSections pricingData={pricingData}> </PricingSections>
       </Suspense>
 
+
+      <WorkFlowSection></WorkFlowSection>
       <FooterSection></FooterSection>
     </>
   );
