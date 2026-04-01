@@ -84,8 +84,8 @@ function NavBar({ cart }) {
               </div>
             )}
           </button>
-          <a className="font-semibold cursor-pointer">Button</a>
-          <button className="bg-linear-to-r from-[#4F39F6] to-[#9514FA]  rounded-full px-4 py-3 font-semibold cursor-pointer text-white">
+          <a className="font-semibold cursor-pointer">Login </a>
+          <button className=" hidden md:block bg-linear-to-r from-[#4F39F6] to-[#9514FA]  rounded-full px-4 py-3 font-semibold cursor-pointer text-white">
             Get Started
           </button>
         </div>
